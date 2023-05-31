@@ -1,0 +1,56 @@
+body {
+    margin: 20px;
+    font-family: perpetua;
+    text-shadow: 1px 1px #4a4e69;
+}
+
+.profile-pic {
+    width: 150px;
+    border: solid 5px #edede8;
+}
+
+.card {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 6px solid #edede8;
+    background: #ecf8f8;
+    color: #b2967d;
+    border-radius: 20px;
+}
+
+/* .animation {
+    display: block;
+    width: 100px;
+    animation-duration: 3s;
+    animation-name: slide-up;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+    0% {
+        margin-right: 0%;
+    }
+    50% {
+        margin-right: 10px;
+    }
+    100% {
+        margin-right: 0%;
+    }
+} */
+.animation {
+    position: absolute;
+    bottom: 670px;
+    left: 1010px;
+    overflow: hidden;
+    height: 0;
+    transition: .5s ease;
+    background: transparent;
+
+}
+.card:hover .animation {
+    height: 10%
+}
